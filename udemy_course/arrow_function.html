@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS ES6</title>
+</head>
+
+<body>
+
+    <script>
+        function myFunctionNormal(params) {
+            console.log("normal function");
+        }
+        myFunctionNormal();
+
+
+        //it helps with the context [this]
+        // No more issues with the 'this' keyword!
+        const myFunc = () => {
+            console.log("Arrow function");
+        }
+        myFunc();
+
+
+        const printMyName = (name) => {
+            console.log("Name: " + name);
+        }
+        printMyName("Nirjhor");
+
+        //shortcut : only valid for 1 arguments
+        const printMyName2 = name => {
+            console.log("Name: " + name);
+        }
+        printMyName2("Sazzad Hossain Nirjhor");
+
+
+        const multiply = (number) => {
+            return number * 2;
+        }
+        console.log(multiply(2));
+
+        //shortcut: if all i need a return in my body of function then
+        const multiply2 = number => number * 2;
+        console.log(multiply2(2));
+    </script>
+</body>
+
+</html>
